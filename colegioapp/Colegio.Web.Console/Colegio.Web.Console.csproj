@@ -1,0 +1,248 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5A79A92-5516-4334-9C83-71172A486EDA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Colegio.Web.Console</RootNamespace>
+    <AssemblyName>Colegio.Web.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ColegioApp\.gitignore" />
+    <Content Include="ColegioApp\dist\ColegioApp\3rdpartylicenses.txt" />
+    <Content Include="ColegioApp\dist\ColegioApp\es2015-polyfills.1e04665e16f944715fd2.js" />
+    <Content Include="ColegioApp\dist\ColegioApp\favicon.ico" />
+    <Content Include="ColegioApp\dist\ColegioApp\index.html" />
+    <Content Include="ColegioApp\dist\ColegioApp\main.15ce0d910cb8a2b9c4fe.js" />
+    <Content Include="ColegioApp\dist\ColegioApp\polyfills.8bbb231b43165d65d357.js" />
+    <Content Include="ColegioApp\dist\ColegioApp\runtime.26209474bfa8dc87a77c.js" />
+    <Content Include="ColegioApp\dist\ColegioApp\styles.3f7348b1151f4af0f9eb.css" />
+    <Content Include="ColegioApp\e2e\protractor.conf.js" />
+    <Content Include="ColegioApp\src\app\alumno-create\alumno-create.component.css" />
+    <Content Include="ColegioApp\src\app\alumno-create\alumno-create.component.html" />
+    <Content Include="ColegioApp\src\app\alumno\alumno.component.css" />
+    <Content Include="ColegioApp\src\app\alumno\alumno.component.html" />
+    <Content Include="ColegioApp\src\app\app.component.css" />
+    <Content Include="ColegioApp\src\app\app.component.html" />
+    <Content Include="ColegioApp\src\app\matter-create\matter-create.component.css" />
+    <Content Include="ColegioApp\src\app\matter-create\matter-create.component.html" />
+    <Content Include="ColegioApp\src\app\matter\matter.component.css" />
+    <Content Include="ColegioApp\src\app\matter\matter.component.html" />
+    <Content Include="ColegioApp\src\app\note-create\note-create.component.css" />
+    <Content Include="ColegioApp\src\app\note-create\note-create.component.html" />
+    <Content Include="ColegioApp\src\app\teacher-create\teacher-create.component.css" />
+    <Content Include="ColegioApp\src\app\teacher-create\teacher-create.component.html" />
+    <Content Include="ColegioApp\src\app\teacher\teacher.component.css" />
+    <Content Include="ColegioApp\src\app\teacher\teacher.component.html" />
+    <Content Include="ColegioApp\src\app\term-create\term-create.component.css" />
+    <Content Include="ColegioApp\src\app\term-create\term-create.component.html" />
+    <Content Include="ColegioApp\src\app\term\term.component.css" />
+    <Content Include="ColegioApp\src\app\term\term.component.html" />
+    <Content Include="ColegioApp\src\favicon.ico" />
+    <Content Include="ColegioApp\src\index.html" />
+    <Content Include="ColegioApp\src\karma.conf.js" />
+    <Content Include="ColegioApp\src\styles.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="WS\ServiceAlumno.svc" />
+    <Content Include="WS\ServiceMatter.svc" />
+    <Content Include="WS\ServiceNote.svc" />
+    <Content Include="WS\ServiceTeacher.svc" />
+    <Content Include="WS\ServiceTerm.svc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\RestConfiguration.cs" />
+    <Compile Include="WS\Interfaces\IServiceAlumno.cs" />
+    <Compile Include="WS\Interfaces\IServiceMatter.cs" />
+    <Compile Include="WS\Interfaces\IServiceNote.cs" />
+    <Compile Include="WS\Interfaces\IServiceTeacher.cs" />
+    <Compile Include="WS\Interfaces\IServiceTerm.cs" />
+    <Compile Include="WS\ServiceAlumno.svc.cs">
+      <DependentUpon>ServiceAlumno.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WS\ServiceMatter.svc.cs">
+      <DependentUpon>ServiceMatter.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WS\ServiceNote.svc.cs">
+      <DependentUpon>ServiceNote.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WS\ServiceTeacher.svc.cs">
+      <DependentUpon>ServiceTeacher.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WS\ServiceTerm.svc.cs">
+      <DependentUpon>ServiceTerm.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ColegioApp\tslint.json" />
+    <Content Include="ColegioApp\tsconfig.json" />
+    <Content Include="ColegioApp\README.md" />
+    <Content Include="ColegioApp\package.json" />
+    <Content Include="ColegioApp\package-lock.json" />
+    <Content Include="ColegioApp\angular.json" />
+    <Content Include="ColegioApp\.editorconfig" />
+    <Content Include="ColegioApp\src\assets\.gitkeep" />
+    <Content Include="ColegioApp\src\browserslist" />
+    <Content Include="ColegioApp\src\tsconfig.app.json" />
+    <Content Include="ColegioApp\src\tsconfig.spec.json" />
+    <Content Include="ColegioApp\src\tslint.json" />
+    <Content Include="ColegioApp\e2e\tsconfig.e2e.json" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="ColegioApp\e2e\src\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="ColegioApp\e2e\src\app.po.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\alumno-create\alumno-create.component.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\alumno\alumno.component.spec.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\alumno\alumno.component.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\app.component.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\app.module.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\matter-create\matter-create.component.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\matter\matter.component.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\note-create\note-create.component.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\teacher-create\teacher-create.component.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\teacher\teacher.component.spec.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\teacher\teacher.component.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\term-create\term-create.component.spec.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\term-create\term-create.component.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\app\term\term.component.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\environments\environment.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\main.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\polyfills.ts" />
+    <TypeScriptCompile Include="ColegioApp\src\test.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Colegio\Colegio.csproj">
+      <Project>{582E4BC9-0104-4A08-870E-355E50DCBC55}</Project>
+      <Name>Colegio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50519</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Colegio.Web.Console</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
